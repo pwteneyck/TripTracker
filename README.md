@@ -10,3 +10,13 @@ As organizations grow and expand their missions efforts, an effective software s
 
 1. **Minimize manual tasks:** Increasing the scope of the software used by a human being reduces the ability of that person to make mistakes: typing incorrect email addresses, accidentally sending out a link to a church-wide budget spreadsheet instead of a training schedule, or attributing donations to the wrong user are all honest mistakes that can be avoided by the use of software. As an organization grows to manage more and more concurrent trips the risk of user error grows proportionally, but the risk of software error remains (relatively) constant.
 1. **Increase efficiency:** Software designed to meet the needs of a trip coordinator reduces the amount of work needed on their part to see a trip through from start to finish. This allows a coordinator to manage more trips than they would using a different, non-specialized tool (or collection of tools), and also allows for easier collaboration between a team of coordinators.
+
+## Goals
+This software (it needs a name that's catchier than "TripTracker") should manage the relational aspect of all of the data behind mission trips. It should:
+
+* handle as much of the administrative overhead of coordinating short-term trips as possible, eliminating completely the need for repetitive manual processes. 
+* Be inexpensive to operate and maintain. 
+* Manage identities of coordinators and trip participants.
+* Track action items for trips (e.g. booking plane tickets) and for individuals (collecting medical information or trip applications).
+* Allow for easy communication (send a form email to all trip participants or all leaders).
+* Provide a tiered authorization scheme, allowing different people access to different information (trip leaders can see funds raised for their team members but not for other trips, while non-leaders can only see their individual support raising progress).
