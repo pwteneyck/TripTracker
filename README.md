@@ -30,4 +30,13 @@ This application will be provided as a library, not as a managed solution (there
 
 The REST service, then, consists of two components: a routing/logic layer which handles requests from the UI and a data-access layer which serves as an adapter to the persistence layer. For ease of use, the application should include at least one template (such as an [AWS CloudFormation template](https://aws.amazon.com/cloudformation/aws-cloudformation-templates/)) and matching adapter to use out-of-the-box.
 
-The user would also be responsible for hosting the application (REST service and UI). Again, this means that the REST service should be written in as platform-agnostic of a way as possible and that any resource templates included in the initial library should include resources for deployment (such as AWS CodeDeploy and Lambda/EC2).
+The user would also be responsible for hosting the application (REST service and UI). Again, this means that the REST service should be written in as platform-agnostic of a way as possible and that any resource templates included in the initial library should include resources for deployment (such as [AWS CodeDeploy](https://aws.amazon.com/codedeploy/) and [Lambda](https://aws.amazon.com/lambda/)/[EC2](https://aws.amazon.com/ec2/)).
+
+### Authentication/Authorization
+
+### REST Service
+
+### Data Storage
+Because the data set will be relatively small (several GB), change infrequently (only human-user interaction), require a roughly equal amount of read and write capacity (within an order of magnitude), and is inherently relational in nature (relating identies, trips, action items, and donations all to each other), a relational datastore meets the needs of this application well.
+
+It's worth noting, however, that the low capacity/rate requirements of this application easily fall within the "free tier" limits for [AWS DynamoDb](https://aws.amazon.com/dynamodb/pricing/), making that a much cheaper option than a traditional managed relational database (e.g. [AWS RDS](https://calculator.s3.amazonaws.com/index.html#s=RDS)).
